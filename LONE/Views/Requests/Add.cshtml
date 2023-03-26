@@ -1,0 +1,103 @@
+﻿@model LONE.Models.AddRequestViewModel
+
+
+@{
+}
+
+<h1 class="mb-3">LONE Request</h1>
+
+<form method="post" action="Add" class="mt-5">
+
+    <div class="mb-3">
+        <label class="form-label">First name</label>
+        <input type="text" class="form-control" asp-for="SubjectFirstName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Last name</label>
+        <input type="text" class="form-control" asp-for="SubjectLastName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Alternative first name (optional)</label>
+        <input type="text" class="form-control" asp-for="SubjectAltFirstName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Alternative Last name (optional)</label>
+        <input type="text" class="form-control" asp-for="SubjectAltLastName" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Date of birth</label>
+        <input type="text" class="form-control" asp-for="SubjectDateofBirth" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Date of death (optional)</label>
+        <input type="text" class="form-control" asp-for="SubjectDateOfDeath" />
+    </div>
+    <div class="mb-3">
+        <label class="form-label">Country of birth (optional)</label>
+        <input type="text" class="form-control" asp-for="SubjectCountryOfBirth" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Title (optional)</label>
+        <input type="text" class="form-control" asp-for="UserTitle" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">First name (optional)</label>
+        <input type="text" class="form-control" asp-for="UserFirstName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Last name</label>
+        <input type="text" class="form-control" asp-for="UserLastName" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Email address</label>
+        <input type="text" class="form-control" asp-for="UserEmailAddress" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Please re-type your email address</label>
+        <input type="text" class="form-control" asp-for="UserRetypeEmailAddress" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Address line 1</label>
+        <input type="text" class="form-control" asp-for="UserAddressLine1" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Address line 2 (optional)</label>
+        <input type="text" class="form-control" asp-for="UserAddressLine2" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Town or city</label>
+        <input type="text" class="form-control" asp-for="UserTownOrCity" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">County (optional)</label>
+        <input type="text" class="form-control" asp-for="UserCounty" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Postcode</label>
+        <input type="text" class="form-control" asp-for="UserPostcode" />
+    </div>
+
+    <div class="mb-3">
+        <label class="form-label">Country</label>
+        <input type="text" class="form-control" asp-for="UserCountry" />
+    </div>
+
+    <div class="mb-3">
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </div>
+
+</form>
